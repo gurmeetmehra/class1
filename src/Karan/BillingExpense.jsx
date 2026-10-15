@@ -13,7 +13,7 @@ const BillingExpense = () => {
     return (
         <div>
             <h1>Billing Expense</h1>
-            <input type="text" placeholder="Enter Expense Amount"
+            <input type="text" placeholder="Enter  d Expense Amount"
                 value={expenseAmount}
                 onChange={(e) => setExpenseAmount(e.target.value)}
             />
