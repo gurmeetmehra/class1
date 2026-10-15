@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextField, Button } from '@mui/material';
+
 import { useState } from 'react';
     
 const BillingExpense = () => {
@@ -13,14 +13,11 @@ const BillingExpense = () => {
     return (
         <div>
             <h1>Billing Expense</h1>
-            <TextField label="Enter Expense Amount"
-                variant="outlined"
-                fullWidth
-                margin="normal"
+            <input type="text" placeholder="Enter Expense Amount"
+                value={expenseAmount}
+                onChange={(e) => setExpenseAmount(e.target.value)}
             />
-            <Button variant="contained" color="primary">
-                Submit
-            </Button>
+
         </div>
     );
 };
